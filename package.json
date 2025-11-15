@@ -1,5 +1,5 @@
 {
-  "name": "mdras-task",
+  "name": "madras-task",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,16 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "antd": "^5.28.1",
+    "mysql2": "^3.15.3",
+    "next": "16.0.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "next": "16.0.2"
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
