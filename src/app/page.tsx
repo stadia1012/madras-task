@@ -268,7 +268,7 @@ export default function Home() {
                       <input
                         ref={extentionInputRef}
                         className="
-                          outline-none w-[200px] h-full py-[1px] px-[6px] mr-[5px]
+                          outline-none w-[130px] sm:w-[200px] h-full py-[1px] px-[6px] mr-[5px]
                           border border-gray-400/89 rounded-[5px] focus:border-purple-600 focus:bg-purple-50/90 hover:border-purple-400 transition
                           text-[14px]"
                         type="text"
@@ -305,8 +305,8 @@ export default function Home() {
                       <div className="w-full h-full">
                         {
                         customLength === 0
-                          ? (<p className="relative text-center text-[13px] text-gray-500 h-[172px] top-[45px]">등록된 확장자가 없습니다.</p>)
-                          : <div className="flex flex-wrap content-start box-border w-full h-[172px] overflow-y-auto p-[3px]">
+                          ? (<p className="relative text-center text-[13px] text-gray-500 h-[150px] sm:h-[172px] top-[45px]">등록된 확장자가 없습니다.</p>)
+                          : <div className="flex flex-wrap content-start box-border w-full h-[150px] sm:h-[172px] overflow-y-auto p-[3px]">
                             {Array.from(totalExtensions).filter((ext) => !fixedExtensions.includes(ext)).sort().map((ext) => (
                               <div
                                 key={ext}
