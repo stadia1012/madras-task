@@ -216,8 +216,11 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black">
       <div
         className="
-          absolute box-border w-[650px] top-[18%] rounded-[6px]
-          shadow-[0_2px_5px_rgba(0,0,0,0.20)] bg-white py-[30px] px-[45px]
+          absolute box-border
+          w-[90%] sm:w-[600px] md:w-[650px] max-w-[650px]
+          top-[18%] rounded-[6px]
+          shadow-[0_2px_5px_rgba(0,0,0,0.20)] bg-white
+          py-[30px] px-[45px]
         "  
       >
         {/* header */}
@@ -243,7 +246,7 @@ export default function Home() {
                   <div className="w-[100px] shrink-0">
                     <span>고정 확장자</span>
                   </div>
-                  <div className="flex">
+                  <div className="flex flex-wrap">
                     {fixedExtensions.map((ext) => (
                       <DefaultExtension
                         key={ext}
@@ -302,7 +305,7 @@ export default function Home() {
                       <div className="w-full h-full">
                         {
                         customLength === 0
-                          ? (<p className="relative text-center text-[13px] text-gray-500 top-[45px]">등록된 확장자가 없습니다.</p>)
+                          ? (<p className="relative text-center text-[13px] text-gray-500 h-[172px] top-[45px]">등록된 확장자가 없습니다.</p>)
                           : <div className="flex flex-wrap content-start box-border w-full h-[172px] overflow-y-auto p-[3px]">
                             {Array.from(totalExtensions).filter((ext) => !fixedExtensions.includes(ext)).sort().map((ext) => (
                               <div
